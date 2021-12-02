@@ -55,6 +55,7 @@ services:
     image: puckel/docker-airflow
     volumes: 
       - ./dags:/usr/local/airflow/dags
+      - ./dumps:/dumps/
     ports:
       - "8080:8080"
     command: webserver
